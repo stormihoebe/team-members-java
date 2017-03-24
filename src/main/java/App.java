@@ -25,5 +25,14 @@ public class App {
     avengers.addMember(cap);
     avengers.addMember(iron);
     avengers.addMember(widow);
+    //index
+    get("/", (request, response) -> {
+    Map<String, Object> model = new HashMap<String, Object>();
+    model.put("template", "templates/index.vtl");
+    model.put("teams", Team.all());
+    return new ModelAndView(model, layout);
+  }, new VelocityTemplateEngine());
+
   }
+
 }

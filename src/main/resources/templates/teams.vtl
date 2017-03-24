@@ -1,0 +1,14 @@
+<h1>Team Line-Up</h1>
+<h2>Registered Teams</h2>
+#foreach ($team in $teams)
+  <h4><a href="/teams/$team.getId()">$team.getTeamName()</a></h4><br>
+#end
+<h3>Is your team not listed?</h3>
+<p>
+  There is still time to register for Weekend Startup
+</p>
+<div class="buttonRow">
+  <a href="/teams/new">
+  <button type="button" name="button" class="btn btn-success">Register A New Team</button>
+  </a>
+</div>

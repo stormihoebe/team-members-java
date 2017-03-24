@@ -1,0 +1,19 @@
+<h1>Add a Member to $team.getTeamName()</h1>
+
+<form action="/teams/$team.getId()/heroes" method="post">
+  <input id="teamId" name="teamId" type="hidden" value="$team.getId() ">
+  <div class="form-group">
+    <label for="name">Member Name</label>
+    <input id="name" required name="name" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="skills">List Skills</label>
+    <input id="skills" required name="skills" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="role">Role</label>
+    <input id="role" required name="role" type="text" class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-success">Add Team Member</button>
+</form>

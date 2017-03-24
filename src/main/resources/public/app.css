@@ -28,3 +28,10 @@ h1 {
   margin-right: 2.5;
   min-height: 230px;
 }
+.blackFooter {
+  background: #F89406;
+  margin-top: 50%;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}

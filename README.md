@@ -31,8 +31,7 @@
 | .all returns all instances of Team | Team.all().contains(testTeam)  |  true|
 | team instantiates with id | testTeam.getId() | id = 1|
 | .find returns team with a particular id| Team.find(1)| testTeam |
-| .addMember adds member to a particular team| testMember = new Member("Stormi Hoebe", "Java, JavaScript, UX Design", "Developer");
-testTeam.addMember(testMember);| testTeam.getMembers().contains(testMember) = true|
+| .addMember adds member to a particular team| testMember = new Member("Stormi Hoebe", "Java, JavaScript, UX Design", "Developer");testTeam.addMember(testMember);| testTeam.getMembers().contains(testMember) = true|
 
 ### This is the initial release (1.0):
 https://github.com/stormihoebe/team-members-java/

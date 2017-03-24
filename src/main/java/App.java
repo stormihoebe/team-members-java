@@ -84,7 +84,7 @@ public class App {
     Team team = Team.find(Integer.parseInt(request.params(":id")));
     String name = request.queryParams("name");
     String skills = request.queryParams("skills");
-    String role = request.queryParams("roll");
+    String role = request.queryParams("role");
     Member newMember = new Member( name, skills, role);
     team.addMember(newMember);
     model.put("team", team);

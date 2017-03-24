@@ -59,3 +59,6 @@ public class Team {
   }
 
 }
+// Add new team = green
+//return to team = orange
+//add new member, view all teams = blue
